@@ -1,0 +1,12 @@
+{
+  "name": "stats-preview",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "compile:scss": "sass --watch ./scss/main.scss ./styles.css"
+  },
+  "dependencies": {
+    "sass": "^1.54.5"
+  }
+}

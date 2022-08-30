@@ -1,0 +1,124 @@
+.card {
+    max-width: 32.7rem;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+
+    background-color: var(--dark-desaturated-blue-card-background);
+    box-shadow: 0px 20px 20px -10px rgba(23, 25, 41, 0.203087);
+    border-radius: 8px;
+
+    @media screen and (min-width: 1024px) {
+        flex-direction: row-reverse;
+        max-width: 111rem;
+    }
+
+    &__header {
+        background-color: var(--soft-violet-accent);
+
+        @media screen and (min-width:1024px) {
+            min-width: 54rem;
+        }
+    }
+
+    &__banner {
+        mix-blend-mode: multiply;
+        opacity: 0.75;
+        border-radius: 8px 8px 0px 0px;
+        width: 100%;
+    }
+
+    &__content {
+        padding: 4rem 3.1rem 3.2rem 3.1rem;
+        text-align: center;
+
+        @media screen and (min-width: 1024px) {
+            text-align: left;
+            padding: 7.1rem 9.5rem 5.9rem 7.2rem;
+        }
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 2.8rem;
+        line-height: 3.2rem;
+        color: var(--white);
+
+        strong {
+            color: var(--soft-violet-accent);
+        }
+
+        @media screen and (min-width: 1024px) {
+            font-size: 3.6rem;
+            line-height: 4.4rem;
+        }
+    }
+
+    &__description {
+        margin-top: 1.6rem;
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        color: #FFFFFF;
+        mix-blend-mode: normal;
+        opacity: 0.75;
+
+        @media screen and (min-width: 1024px) {
+            margin-top: 2.5rem;
+            max-width: 37.4rem;
+        }
+    }
+
+    &__footer {
+        margin-top: 4rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2.4rem;
+
+        @media screen and (min-width: 1024px) {
+            flex-direction: row;
+            margin-top: 7.2rem;
+            gap: 6rem;
+        }
+    }
+
+    &__stat {
+        display: flex;
+        gap: 2px;
+        flex-direction: column;
+        
+        strong {
+            font-weight: 700;
+            font-size: 2.4rem;
+            line-height: 2.9rem;
+            text-align: center;
+            color: var(--white);
+
+            @media screen and (min-width: 1024px) {
+                text-align: left;
+            }
+            
+        }
+
+        sub {
+            font-family: var(--secondary-font);
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.2rem;
+            line-height: 2.5rem;
+
+            text-align: center;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+
+            color: var(--white);
+
+            mix-blend-mode: normal;
+            opacity: 0.6;
+
+            @media screen and (min-width: 1024px) {
+                text-align: left;
+            }
+        }
+    }
+}
